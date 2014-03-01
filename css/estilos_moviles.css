@@ -1,0 +1,36 @@
+#bienvenida {
+	background-color: black;
+
+}
+/* Selector de clase */
+.frase {
+
+	width: 80%;
+	/*margin-top.0;*/
+	margin:0;
+	padding:.5em;	
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#menu li, #derechos, #suscripcion {
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 2em;
+}
+
+#derechos {
+
+	width: 80%;
+	text-align: center;
+}
+
+#suscripcion {
+	width: 80%;
+	text-align: center;
+}
+
+#suscripcion label {
+	width: 70%;
+	font-size: 1.5em;
+}

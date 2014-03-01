@@ -1,0 +1,59 @@
+body {
+	font-size: 100%;
+	font-family: 'Press Start 2P', cursive;
+	/* 1em = al font-size definido o heredado
+
+	 */
+}
+/*Selector de Etiqueta */
+header, footer {
+	color: white;
+	background-color: #34302d;
+	padding: 0.5em
+}
+
+/* Selector de tu id */
+#frases {
+	background-color: green;
+	color: white;
+}
+
+#bienvenida {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	/*
+	 background-attachment: fixed;
+	 background-size:cover;/;
+	 no-repeat
+	 */
+}
+/* Selector de clase */
+.frase {
+	text-align: center;
+	margin: .5em;
+	padding-top:.5em;
+}
+
+.frase p {
+	font-size: 1.5em;
+}
+
+#menu li, #derechos, #suscripcion {
+
+	margin: 0.7em;
+}
+
+#email {
+	width: 80%;
+}
+
+footer {
+	padding-bottom: 3em;
+}
+
+video {
+	width: 100%;
+}
+
+

@@ -1,0 +1,115 @@
+#bienvenida {
+
+	background: url("../imagenes/fondo_presentacion.jpg");
+	line-height: 500px;
+	height: 1000px;
+	/*  para que la imagen no se repita  */
+	background-repeat: no-repeat;
+	/*  para que se quede fija la imagen  */
+	background-attachment: fixed;
+	/*  para que la imagen se extienda en toda la pagina   */
+	background-size: cover;
+	/* sombra*/
+	text-shadow: 0px 0px 4px red;
+	-moz-text-shadow: 0px 0px 4px red;
+	-webkit-text-shadow: 0px 0px 4px red;
+	-o-text-shadow: 0px 0px 4px red;
+	-ms-text-shadow: 0px 0px 4px red;
+}
+/* Selector de clase */
+.frase {
+	display: inline-block;
+	width: 30%;
+}
+
+#menu li, #derechos, #suscripcion {
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+#derechos {
+
+	width: 40%;
+}
+
+#suscripcion {
+	width: 40%;
+}
+
+#suscripcion label {
+	width: 40%;
+}
+
+/* Tranformacion para imagenes dentro de Divs */
+
+.frase img:hover {
+	/* Hace imagen mas grande
+	 General */
+	transform: scale(1.5);
+	/* Firefox OLD */
+	-moz-transform: scale(1.5);
+	/* Chrome OLD */
+	-webkit-transform: scale(1.5);
+	/* Opera OLD */
+	-o-transform: scale(1.5);
+	/* IE OLD */
+	-ms-tranform: scale(1.5);
+}
+
+/* TRANCISION PARA LAS IMAGENES FRASE*/
+.frase img {
+	transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+}
+
+#redes-sociales img:hover {
+	transform: rotate(180deg);/* Nuevas versiones */
+	-moz-transform: rotate(180deg); /* Firefox */
+	-webkit-transform: rotate(180deg); /* Chrome*/
+	-o-transform: rotate(180deg);/*  safari y opera*/
+	-ms-transform: rotate(180deg);/* IE8 */
+}
+
+#redes-sociales img {
+	transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+
+#redes-sociales {
+	position: fixed;
+	bottom: 0.5em;
+	right: 0.5em;
+	background-color: orange;
+	opacity: 0.7;
+	padding: 0.5em;
+	/* Esquinas Redondas */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	/* Sombras */
+	box-shadow: 0px 0px 5px 5px blue;
+	-moz-box-shadow: 0px 0px 5px 5px blue;
+	-o-box-shadow: 0px 0px 5px 5px blue;
+	-webkit-box-shadow: 0px 0px 5px 5px blue;
+	-ms-box-shadow: 0px 0px 5px 5px blue;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+#cajavacia {
+	height: 105px;;
+}
+
