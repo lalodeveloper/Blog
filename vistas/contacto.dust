@@ -49,8 +49,25 @@
 
 		</header>
 		<section>
-			<h2>Te has suscrito {email}!!! Oralesss</h2>
-			<p>{asunto}</p>
+			
+				<form action="/contactar" method="post">
+					<label id for="email">Nombre:</label>
+					<input id="nombre" type="text" name="nombre" required/>
+					</br>
+					<label id for="email">Email:</label>
+					<input id="email" type="email" name="email" required/>
+					</br>
+					<label id for="email">Website:</label>
+					<input id="web" type="url" name="web" required/>
+					</br>
+					<label id for="email">Edad:</label>
+					<input id="edad" type="number" name="edad" required min="18" max="99" />
+					</br>
+					<label id for="email">Comentario:</label>
+					<textarea name="coment"></textarea>
+					</br>
+					<input value="Enviar" type="submit" >
+				</form>
 		</section>
 		<footer>
 			<!-- pie de pagina -->

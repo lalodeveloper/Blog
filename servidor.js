@@ -40,6 +40,12 @@ app.get("/index", function(request,response){
 });
 
 
+app.get("/contacto", function(request,response){
+	// logica de como respondere a la peticion /index
+	response.render("contacto");
+});
+
+
 //respondemos  una peticion POST
 app.post("/suscribirse",function(request,response){
 	//Imprimir en consola
@@ -51,3 +57,24 @@ app.post("/suscribirse",function(request,response){
 });
 
 
+
+app.post("/contactar",function(request,response){
+	//Imprimir en consola
+	console.log("Nombre:"+request.body.email);
+	console.log("Email:"+request.body.email);
+	console.log("Website:"+request.body.web);
+	console.log("Edad:"+request.body.edad);
+	//console.log("Comentario:"+request.body.coment);
+	
+	//response.render("contactar");
+	
+	//response.send("datos enviados”");
+	
+	response.render("contactar",{
+		nombre: request.body.nombre,
+		email: request.body.email,
+		web: request.body.web,
+		edad: request.body.edad
+	});
+		
+});

@@ -49,8 +49,13 @@
 
 		</header>
 		<section>
-			<h2>Te has suscrito {email}!!! Oralesss</h2>
-			<p>{asunto}</p>
+		
+<p>confirme sus datos son :</p>
+		<p>Nombre: {nombre} </p>
+		<p>Email: {email} </p>
+		<p>Website: {web} </p>
+		<p>Edad: {edad} </p>
+			
 		</section>
 		<footer>
 			<!-- pie de pagina -->
