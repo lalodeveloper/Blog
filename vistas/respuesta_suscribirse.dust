@@ -49,7 +49,7 @@
 
 		</header>
 		<section>
-			Te has suscrito!!! Oralesss
+			Te has suscrito {email}!!! Oralesss
 		</section>
 		<footer>
 			<!-- pie de pagina -->

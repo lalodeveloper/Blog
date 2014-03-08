@@ -42,8 +42,12 @@ app.get("/index", function(request,response){
 
 //respondemos  una peticion POST
 app.post("/suscribirse",function(request,response){
+	//Imprimir en consola
 	console.log("Email:"+request.body.email);
-	response.render("respuesta_suscribirse");
+	response.render("respuesta_suscribirse",{
+		asunto:"Yo soy el servidor",
+		email: request.body.email
+	});
 });
 
 
