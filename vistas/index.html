@@ -6,12 +6,12 @@
 		<meta charset="UTF-8" />
 		<!-- Encoding de lenguaje -->
 		<title>Mi página</title>
-		<link href="imagenes/favicon.ico" rel="shortcut icon"/>
+		<link href="../imagenes/favicon.ico" rel="shortcut icon"/>
 		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-		<link href="css/normalize.css" rel="stylesheet" media="screen"/>
-		<link href="css/estilos_all.css" rel="stylesheet" media="screen"/>
-		<link href="css/estilos_lap.css" rel="stylesheet" media="screen and  (min-width:600px)" />
-		<link href="css/estilos_moviles.css" rel="stylesheet" media="screen and (max-width:600px)" />
+		<link href="../css/normalize.css" rel="stylesheet" media="screen"/>
+		<link href="../css/estilos_all.css" rel="stylesheet" media="screen"/>
+		<link href="../css/estilos_lap.css" rel="stylesheet" media="screen and  (min-width:600px)" />
+		<link href="../css/estilos_moviles.css" rel="stylesheet" media="screen and (max-width:600px)" />
 
 		<!-- manera alterna de importar hoja de estilos
 		<style>
@@ -25,7 +25,7 @@
 	<body>
 		<!-- contenido de la pagina -->
 		<div id="cajavacia">
-			
+
 		</div>
 		<header>
 			<!-- Encabezados -->
@@ -55,19 +55,19 @@
 		<section id="frases">
 			<!-- Seccion Frases -->
 			<div class="frase">
-				<img src="imagenes/chela.png" />
+				<img src="../imagenes/chela.png" />
 				<p>
 					Imaginar
 				</p>
 			</div>
 			<div class="frase">
-				<img src="imagenes/lambda.png" />
+				<img src="../imagenes/lambda.png" />
 				<p>
 					Pensar
 				</p>
 			</div>
 			<div class="frase">
-				<img src="imagenes/python.png" />
+				<img src="../imagenes/python.png" />
 				<p>
 					Crear
 				</p>
@@ -88,15 +88,18 @@
 					MiPagina Derechos Reservados &copy;
 				</p>
 				<div id="redes-sociales">
-					<img src="imagenes/facebook.png" />
-					<img src="imagenes/twitter.png" />
-					<img src="imagenes/googleplus.png" />
-					<img src="imagenes/youtube.png" />
+					<img src="../imagenes/facebook.png" />
+					<img src="../imagenes/twitter.png" />
+					<img src="../imagenes/googleplus.png" />
+					<img src="../imagenes/youtube.png" />
 				</div>
 			</div>
 			<div id="suscripcion">
-				<label id for="email">Suscribete:</label>
-				<input id="email" type="text" />
+				<form action="/suscribirse" method="post">
+					<label id for="email">Suscribete:</label>
+					<input id="email" type="text" name="email" />
+					<input value="Enviar" type="submit" >
+				</form>
 			</div>
 		</footer>
 	</body>

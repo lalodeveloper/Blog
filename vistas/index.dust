@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Hey esto es un comentario -->
+<html>
+	<head>
+		<!-- aqui toda la configuracion -->
+		<meta charset="UTF-8" />
+		<!-- Encoding de lenguaje -->
+		<title>Mi página</title>
+		<link href="imagenes/favicon.ico" rel="shortcut icon"/>
+		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link href="css/normalize.css" rel="stylesheet" media="screen"/>
+		<link href="css/estilos_all.css" rel="stylesheet" media="screen"/>
+		<link href="css/estilos_lap.css" rel="stylesheet" media="screen and  (min-width:600px)" />
+		<link href="css/estilos_moviles.css" rel="stylesheet" media="screen and (max-width:600px)" />
+
+		<!-- manera alterna de importar hoja de estilos
+		<style>
+		@import url("css/estilos.css");
+
+		and (max-width:800px)"
+		</style>
+
+		-->
+	</head>
+	<body>
+		<!-- contenido de la pagina -->
+		<div id="cajavacia">
+			
+		</div>
+		<header>
+			<!-- Encabezados -->
+			<nav>
+				<!-- Barra de navegacion -->
+				<ul id="menu">
+					<li>
+						Inicio
+					</li>
+					<li>
+						Productos
+					</li>
+					<li>
+						Blog
+					</li>
+					<li>
+						Acerca
+					</li>
+				</ul>
+			</nav>
+
+		</header>
+		<section id="bienvenida">
+			<!--seccion Bienvenida -->
+			Programar con corazón
+		</section>
+		<section id="frases">
+			<!-- Seccion Frases -->
+			<div class="frase">
+				<img src="imagenes/chela.png" />
+				<p>
+					Imaginar
+				</p>
+			</div>
+			<div class="frase">
+				<img src="imagenes/lambda.png" />
+				<p>
+					Pensar
+				</p>
+			</div>
+			<div class="frase">
+				<img src="imagenes/python.png" />
+				<p>
+					Crear
+				</p>
+			</div>
+		</section>
+		<section>
+			<!-- seccion Video -->
+			<video  controls="true" poster="imagenes/logo-chrome.jpg" >
+				<source src="videos/chrome_japan.webm" type="video/webm" />
+				<source src="videos/chrome_japan.ogv" type="video/ogg" />
+				<source src="videos/chrome_japan.mp4" type="video/mp4" />
+			</video>
+		</section>
+		<footer>
+			<!-- pie de pagina -->
+			<div id="derechos">
+				<p>
+					MiPagina Derechos Reservados &copy;
+				</p>
+				<div id="redes-sociales">
+					<img src="imagenes/facebook.png" />
+					<img src="imagenes/twitter.png" />
+					<img src="imagenes/googleplus.png" />
+					<img src="imagenes/youtube.png" />
+				</div>
+			</div>
+			<div id="suscripcion">
+				<form action="/suscribirse" method="post">
+					<label id for="email">Suscribete:</label>
+					<input id="email" type="text" name="email" />
+					<input value="Enviar" type="submit" >
+				</form>
+			</div>
+			</div>
+		</footer>
+	</body>
+</html>
