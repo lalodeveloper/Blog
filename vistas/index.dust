@@ -6,6 +6,7 @@
 		<meta charset="UTF-8" />
 		<!-- Encoding de lenguaje -->
 		<title>Mi página</title>
+			<script src="javascript/eventos.js"></script>
 		<link href="imagenes/favicon.ico" rel="shortcut icon"/>
 		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 		<link href="css/normalize.css" rel="stylesheet" media="screen"/>
@@ -33,13 +34,16 @@
 				<!-- Barra de navegacion -->
 				<ul id="menu">
 					<li>
-						Inicio
+						<a href="/index">Inicio</a>
 					</li>
 					<li>
 						Productos
 					</li>
 					<li>
 						Blog
+					</li>
+					<li>
+						<a href="/contacto">Contacto</a>
 					</li>
 					<li>
 						Acerca

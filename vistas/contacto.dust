@@ -33,7 +33,8 @@
 				<!-- Barra de navegacion -->
 				<ul id="menu">
 					<li>
-						Inicio
+					
+					<a href="/index">Inicio</a>
 					</li>
 					<li>
 						Productos
@@ -42,33 +43,46 @@
 						Blog
 					</li>
 					<li>
+						<a href="/contacto">Contacto</a>
+					</li>
+					<li>
 						Acerca
 					</li>
 				</ul>
 			</nav>
 
 		</header>
-		<section>
-			
-				<form action="/contactar" method="post">
-					<label id for="email">Nombre:</label>
-					<input id="nombre" type="text" name="nombre" required/>
-					</br>
-					<label id for="email">Email:</label>
-					<input id="email" type="email" name="email" required/>
-					</br>
-					<label id for="email">Website:</label>
-					<input id="web" type="url" name="web" required/>
-					</br>
-					<label id for="email">Edad:</label>
-					<input id="edad" type="number" name="edad" required min="18" max="99" />
-					</br>
-					<label id for="email">Comentario:</label>
-					<textarea name="coment"></textarea>
-					</br>
-					<input value="Enviar" type="submit" >
-				</form>
-		</section>
+		 <!--OBSERVA LA DEFINICION DEL ATRIBUTO TYPE DE LOS INPUTS-->
+        <section>
+            <form action="/respuesta_contacto" method="post">
+                <p>
+                    <!--solicito el nombre-->
+                    <label>Nombre</label>
+                    <input type="text" name="nombre"/>
+                </p>
+                <p>
+                    <!--solicito el email-->
+                    <label>Email</label>
+                    <input type="email" name="email"/>
+                </p>
+                <p>
+                    <!--solicito la url-->
+                    <label>Website:</label>
+                    <input type="url" name="url"/>
+                </p>
+                <p>
+                    <label>Edad:</label>
+                    <input type="number" name="edad" min="12" max="90" step="1"/>
+
+                </p>
+                <p>
+                    <label>Comentario:</label>
+                    <input type="textarea" name="comentario"/>
+                </p>
+                <input value="Enviar" type="submit" />
+            </form>
+        </section>
+
 		<footer>
 			<!-- pie de pagina -->
 			<div id="derechos">

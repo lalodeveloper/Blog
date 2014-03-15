@@ -10,17 +10,31 @@ var consolidate = require("consolidate");
 var dust = require("dustjs-linkedin");
 // motor para crear vistas dinamicas
 
+//Servidor local para openshif se usa el default
+//app.listen(8081);
 
-app.listen(8081);
+
+//
+if (process.env.OPENSHIFT_NODEJS_PORT) {
+	app.listen(process.env.OPENSHIFT_NODEJS_PORT, process.env.OPENSHIFT_NODEJS_IP);
+	}
+	else{
+		app.listen(8081);
+	}
+
+//
+
 
 // Para imprimir en consola del servidor
 console.log("Servidor levantado :)");
 
 //Despachar archivos estaticos
 //app.use("/", express.static(__dirname + "/vistas"));
+
 app.use("/css", express.static(__dirname + "/css"));
 app.use("/imagenes", express.static(__dirname + "/imagenes"));
 app.use("/videos", express.static(__dirname + "/videos"));
+app.use("/javascript", express.static(__dirname + "/javascript"));
 
 
 //configurar nuestro motor de vistas
@@ -35,6 +49,12 @@ app.use(express.urlencoded());
 
 //hacemos que el servidor responda a las peticiones  get
 app.get("/index", function(request,response){
+	// logica de como respondere a la peticion /index
+	response.render("index");
+});
+
+//hacemos que el servidor responda a las peticiones  get
+app.get("/", function(request,response){
 	// logica de como respondere a la peticion /index
 	response.render("index");
 });

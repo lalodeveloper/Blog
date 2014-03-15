@@ -113,3 +113,7 @@ header {
 	height: 105px;;
 }
 
+#menu li:hover {
+	background-color:#888888;
+}
+
